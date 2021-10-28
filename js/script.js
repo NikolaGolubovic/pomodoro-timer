@@ -139,6 +139,13 @@ confirmSettings.addEventListener("click", function () {
   clearInterval(pomodoroTimer);
   clearInterval(shortTimer);
   clearInterval(longTimer);
+  pomodoroTab = true;
+  shortTab = false;
+  longTab = false;
+  pomodoroStop = false;
+  shortStop = false;
+  longStop = false;
+  playText.textContent = "P L A Y";
 });
 
 pomodoro.addEventListener("click", function () {
